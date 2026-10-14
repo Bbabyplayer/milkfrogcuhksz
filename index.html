@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>香港中文大學</title>
+<meta name="description" content="點擊前往香港中文大學 / 香港中文大學（深圳）">
+<style>
+  :root {
+    --purple: #4b2a6d;
+    --purple-light: #6d4a94;
+    --gold: #c9a227;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    font-family: "Songti TC", "STSong", "SimSun", "Noto Serif TC", serif;
+    color: var(--purple);
+  }
+  .crest {
+    width: min(300px, 62vw);
+    margin-bottom: clamp(28px, 5vh, 56px);
+    filter: drop-shadow(0 4px 12px rgba(75, 42, 109, .12));
+  }
+  .gate {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(14px, 2.6vh, 26px);
+  }
+  .link {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 22px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--purple);
+    font-size: clamp(19px, 2.6vw, 30px);
+    letter-spacing: 3px;
+    transition: background .2s ease, transform .2s ease;
+  }
+  .link img { height: clamp(30px, 4.5vw, 42px); width: auto; }
+  .link:hover {
+    background: rgba(75, 42, 109, .07);
+    transform: translateY(-2px);
+  }
+  .link:hover .txt { text-decoration: underline; text-underline-offset: 6px; }
+  .txt b { color: var(--purple-light); font-weight: normal; }
+</style>
+</head>
+<body>
+
+  <img class="crest" src="crest.png" alt="香港中文大學校徽">
+
+  <nav class="gate">
+    <a class="link" href="https://www.cuhk.edu.hk/" target="_blank" rel="noopener">
+      <img src="icon.png" alt="">
+      <span class="txt">點擊前往<b>香港中文大學</b></span>
+    </a>
+    <a class="link" href="https://www.cuhk.edu.cn/" target="_blank" rel="noopener">
+      <img src="icon.png" alt="">
+      <span class="txt">點擊前往<b>香港中文大學（深圳）</b></span>
+    </a>
+  </nav>
+
+</body>
+</html>
